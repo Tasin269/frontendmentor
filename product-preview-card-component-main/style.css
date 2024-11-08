@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.container{
+    width: clamp(485px, 40%, 620px);
+    margin: auto;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 40px auto;
+}
+img[src*="product"]{
+    width: 100%;
+    display: block;
+}
+.info{
+    box-sizing: border-box;
+    padding: 0 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info #type{
+    font-family: "Montserrat";
+    letter-spacing: 6px;
+    color: hsl(228, 12%, 48%);
+}
+.info #name{
+    line-height: 1;
+    font-family: "Fraunces", serif;
+}
+.info #more-info{
+    line-height: 1.3;
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+}
+.info .price{
+    display: flex;
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+.info .price p{
+    font-weight: 500;
+    margin-top: 10px;
+    color: hsl(228, 12%, 48%);
+    margin-left: 17px;
+    text-decoration: line-through;
+}
+.info .buy-btn {
+    background-color: hsl(158, 36%, 37%);
+    padding: 13px 1px;
+    border-radius: 5px;
+    display: flex;
+    color: #fff;
+    font-family: "Montserrat";
+    justify-content: center;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    outline: none;
+}
+.info .buy-btn p{
+    word-spacing: px;
+    margin-left: 10px;
+}
+.info .buy-btn:hover{
+    background-color: hsl(161, 24%, 28%);
+    cursor: pointer;
+}
+@media screen and (max-width: 520px) {
+    .container{
+        width: min(370px, 85%);
+        display: flex;
+        flex-direction: column;
+    }
+    picture{
+        margin-bottom: 8%;
+    }
+    .info #type, .info #name, .info #more-info, .info .price, .info .buy-btn{
+        margin-bottom: 20px;
+    }
+}
