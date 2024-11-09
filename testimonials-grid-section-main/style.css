@@ -35,11 +35,13 @@ img{
     opacity: 50%;
 }
 .card .review-one{
-  font-size: 3.1rem;
+    font-size: 2.6rem;
+    word-spacing: 5px;
     margin-bottom: 20px;
     font-weight: 600;
 }
 .card .review-two{
+    font-size: 1.8rem;
     margin-bottom: 20px;
     opacity: 60%;
     font-weight: 500;
@@ -54,6 +56,7 @@ img{
 }
 #card3, #card5{
     color: hsl(217, 19%, 35%);
+    background-color: #fff;
 }
 #card4{
     background-color: hsl(219, 29%, 14%);
