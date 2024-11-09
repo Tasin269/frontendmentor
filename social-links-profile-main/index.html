@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Social links Card</title>
- <link rel="icon" href="./assets/images/favicon-32x32.png">
- <style>
-  @font-face{
-   font-family: Inter;
-   src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
-  }
-  :root{
-   font-size: 14px;
-  }
- *{
-  margin: 0;
-  padding: 0;
-  font-family: Inter;
-  color: #fff;
-  text-decoration: none;
- }
- .center{
-  background-color: #000;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- .card{
-  background-color: hsl(0, 0%, 8%);
-  width: min(80%, 460px);
-  padding: 30px 20px;
-  border-radius: 9px;
- }
- .profile{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
- .profile img{
-  border-radius: 50%;
-  width: 100px;
-  margin-bottom: 20px;
- }
- .profile h1{
-  margin-bottom: 7px;
- }
- .profile h3{
-  color: hsl(75, 94%, 57%);
-  margin-bottom: 20px;
- }
- .profile p{
-  opacity: 0.8;
-  margin-bottom: 30px;
- }
- .links a{
-  text-align: center;
-  display: block;
-  margin: auto;
-  padding: 24px 0;
-  width: 90%;
-  background-color: hsl(0, 0%, 20%);
-  margin-bottom: 20px;
-  border-radius: 10px;
- }
- .links a:hover{
-  background-color: hsl(75, 94%, 57%);
-  color: #000;
- }
- </style>
-</head>
-<body>
- <div class="center">
- <div class="card">
-  <div class="profile">
-   <img src="./assets/images/avatar-jessica.jpeg" alt="User Pic">
-   <h1>Jessica Randall</h1>
-   <h3>London, United Kingdom</h3>
-   <p>"Front-end developer and avid reader."</p>
-  </div>
-  <div class="links">
-   <a href="javascript:void(0)">Github</a>
-   <a href="javascript:void(0)">Frontend Mentor</a>
-   <a href="javascript:void(0)">LinkedIn</a>
-   <a href="javascript:void(0)">Twitter</a>
-   <a href="javascript:void(0)">Instagram</a>
-  </div>
- </div>
- </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Social links Card</title>
+    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <style>
+      @font-face {
+        font-family: Inter;
+        src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+      }
+      :root {
+        font-size: 14px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Inter;
+        color: #fff;
+        text-decoration: none;
+      }
+      .center {
+        background-color: #000;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        background-color: hsl(0, 0%, 8%);
+        width: min(80%, 460px);
+        padding: 30px 20px;
+        border-radius: 9px;
+      }
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile img {
+        border-radius: 50%;
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      .profile h1 {
+        margin-bottom: 7px;
+      }
+      .profile h3 {
+        color: hsl(75, 94%, 57%);
+        margin-bottom: 20px;
+      }
+      .profile p {
+        opacity: 0.8;
+        margin-bottom: 30px;
+      }
+      .links {
+        display: block;
+        list-style: none;
+      }
+      .links a {
+        text-align: center;
+        display: block;
+        margin: auto;
+        padding: 24px 0;
+        width: 90%;
+        background-color: hsl(0, 0%, 20%);
+        margin-bottom: 20px;
+        border-radius: 10px;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-focus-ring-color: transparent;
+        outline: none;
+      }
+      .links a:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="card">
+        <div class="profile">
+          <img src="./assets/images/avatar-jessica.jpeg" alt="User Pic" />
+          <h1>Jessica Randall</h1>
+          <h3>London, United Kingdom</h3>
+          <p>"Front-end developer and avid reader."</p>
+        </div>
+        <ul class="links">
+          <li><a href="javascript:void(0)">Github</a></li>
+          <li><a href="javascript:void(0)">Frontend Mentor</a></li>
+          <li><a href="javascript:void(0)">LinkedIn</a></li>
+          <li><a href="javascript:void(0)">Twitter</a></li>
+          <li><a href="javascript:void(0)">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

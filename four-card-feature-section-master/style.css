@@ -50,6 +50,7 @@ body{
 }
 .card h1 {
     color: hsl(234, 12%, 34%);
+    font-size: 2.4 rem;
 }
 .card p {
     margin-bottom: 50px;
