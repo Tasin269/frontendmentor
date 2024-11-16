@@ -21,11 +21,13 @@ body {
   background-color: $bodyBgColor;
 }
 .card{
-  width: min(360px, 75%);
+  margin: 40px 0;
+  width: clamp(280px, 80%, 380px);
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
   position: relative;
+  box-shadow: 1px 1px 3px 2px #0000002f;
 }
 #product {
   width: 100%;
@@ -53,7 +55,7 @@ p{
   font-size: 1rem;
 }
 #profile{
-  height: 100%;
+  height: 90%;
   border-radius: 50%;
 }
 .info {
@@ -143,5 +145,11 @@ p{
     border-style: solid;
     border-width: 5px;
     border-color: $textColor1 transparent transparent transparent;
+  }
+}
+
+@media (max-width: 350px) {
+  .card {
+    
   }
 }
