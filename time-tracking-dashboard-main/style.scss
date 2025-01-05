@@ -34,10 +34,12 @@ body {
   color: #fff;
 }
 .main {
+  min-height: 100vh;
   display: grid;
   row-gap: 20px;
   margin: 30px auto;
   width: 83%;
+  place-content: center;
 }
 .card {
   background-color: $dark-blue;
