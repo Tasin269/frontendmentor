@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip calculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="main">
+    <h1 class="head-name">SPLI<div></div>TTER</h1>
+    <form onclick="javascript:void(0)">
+      <div class="bill">
+        <label for="bill">Bill</label>
+        <div>
+          <input type="number" name="bill" id="bill" placeholder="0" class="input-field"/>
+          <img src="./images/icon-dollar.svg" alt="" />
+        </div>
+      </div>
+      <div class="select-tip">
+        <p>Select Tip %</p>
+        <div class="container">
+          <label for="tip5">
+            <p>5%</p>
+            <input type="radio" id="tip5" name="tip" class="input-field">
+          </label>
+          <label for="tip10">
+            <p>10%</p>
+            <input type="radio" id="tip10" name="tip" class="input-field">
+          </label>
+          <label for="tip15">
+            <p>15%</p>
+            <input type="radio" id="tip15" name="tip" class="input-field">
+          </label>
+          <label for="tip25">
+            <p>25%</p>
+            <input type="radio" id="tip25" name="tip" class="input-field">
+          </label>
+          <label for="tip50">
+            <p>50%</p>
+            <input type="radio" id="tip50" name="tip" class="input-field">
+          </label>
+          <input type="number" name="custom" id="custom" placeholder="Custom" class="input-field">
+        </div>
+      </div>
+      <div class="number-of-people">
+        <label for="number-of-people">
+          <span>Number of people</span>
+          <span id="error-msg">Can't be zero</span>
+        </label>
+        <div>
+          <input type="number" name="number-of-people" id="number-of-people" placeholder="0" class="input-field"/>
+          <img src="./images/icon-person.svg" alt="">
+        </div>
+      </div>
+      <div class="show-tip">
+        <div class="tip-amount">
+          <div>
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <p id="tip-amount">$0.00</p>
+        </div>
+        <div class="total">
+          <div>
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <p id="total">$0.00</p>
+        </div>
+        <input type="reset" value="RESET" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>
