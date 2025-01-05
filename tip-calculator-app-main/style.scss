@@ -31,9 +31,10 @@ body {
 }
 .head-name {
   color: $very-dark-cyan;
-  margin: 35px 0 25px;
+  margin: 35px 0 40px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
+  font-weight: 500;
 }
 form {
   border-top-left-radius: 45px;
@@ -212,9 +213,11 @@ form {
   form {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 30px;
+   gap: 40px;
+   padding: 40px;
   }
   .show-tip {
+    padding: 80px 45px;
     grid-row: 1/4;
     grid-column: 2/3;
     display: grid;
