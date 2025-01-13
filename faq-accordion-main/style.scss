@@ -27,9 +27,9 @@ html {
     margin: 30px 0;
     border-radius: 9px;
     background-color: #fff;
-    width: min(90%, 400px);
+    width: min(90%, 500px);
     box-sizing: border-box;
-    padding: 20px 17px 7px;
+    padding: 48px 17px 30px;
 }
 .header {
     display: flex;
@@ -109,6 +109,11 @@ html {
     hr {
         opacity: 0.1;
     }
+}
+@media (min-width: 500px) {
+  .card {
+    padding: 48px 20px 30px 40px;
+  }
 }
 @media (min-width: 1300px) {
   .main {
