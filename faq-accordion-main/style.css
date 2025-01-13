@@ -13,7 +13,8 @@ html {
 }
 
 .main {
-  background-color: hsl(275, 100%, 97%);
+  background: url("./images/background-pattern-mobile.svg") hsl(275, 100%, 97%) no-repeat top center;
+  background-size: 100%;
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -102,4 +103,10 @@ html {
 }
 .container hr {
   opacity: 0.1;
+}
+
+@media (min-width: 1300px) {
+  .main {
+    background-image: url("./images/background-pattern-desktop.svg");
+  }
 }

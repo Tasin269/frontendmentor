@@ -17,7 +17,8 @@ html {
     outline: none;
 }
 .main {
-    background-color: $light-pink;
+    background: url("./images/background-pattern-mobile.svg") $light-pink no-repeat top center;
+    background-size: 100%;
     min-height: 100vh;
     display: grid;
     place-items: center;
@@ -108,4 +109,9 @@ html {
     hr {
         opacity: 0.1;
     }
+}
+@media (min-width: 1300px) {
+  .main {
+    background-image: url("./images/background-pattern-desktop.svg");
+  }
 }
