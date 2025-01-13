@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$light-pink: hsl(275, 100%, 97%);
+$grayish-purple: hsl(292, 16%, 49%);
+$dark-purple: hsl(292, 42%, 14%);
+$bright-violet: #B028EE;
+
+html {
+    font-size: 75%;
+}
+* {
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    -webkit-focus-ring-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+.main {
+    background-color: $light-pink;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.card {
+    margin: 30px 0;
+    border-radius: 9px;
+    background-color: #fff;
+    width: min(90%, 400px);
+    box-sizing: border-box;
+    padding: 20px 17px 7px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    img {
+        height: 33px;
+        margin-right: 14px;
+    }
+    h1 {
+        font-size: 3.4rem;
+    }
+}
+.container {
+    .item {
+        margin: 20px 0;
+        cursor: pointer;
+    }
+    .question {
+        display: grid;
+        grid-template-columns: 82% 18%;
+        align-items: center;
+        color: $dark-purple;
+
+        &:hover, &.selected {
+          color: $bright-violet;
+        }
+        h2{
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .icon {
+            display: grid;
+            place-content: center;
+            position: relative;
+            transition: all 0.4s;
+            transform: rotate(0deg);
+        }
+        .icon.spin{
+            transform: rotate(180deg);
+        }
+        img {
+            height: 32px;
+            margin-left: auto;
+            transition: all 0.4s;
+        }
+        img:nth-child(2) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+        img:nth-child(2).opacity {
+            opacity: 1;
+        }
+    }
+    .answer {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: all 0.5s;
+        margin-top: 0px;
+      
+        &.height {
+            margin-top: 11px;
+            grid-template-rows: 1fr;
+        }
+        p{
+            color: $dark-purple;
+            font-weight: 500;
+            font-size: 1.2rem;
+            overflow: hidden;
+            opacity: 0.5;
+        }
+    }
+    hr {
+        opacity: 0.1;
+    }
+}
