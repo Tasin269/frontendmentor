@@ -29,7 +29,7 @@ form {
     color: $grey-dark;
     width: min(550px, 90%);
     box-sizing: border-box;
-    margin: 57px 0 30px;
+    margin: 57px 0;
     display: grid;
     row-gap: 15px;
 }
@@ -159,7 +159,7 @@ textarea{
 }
 @media (max-width: 420px) {
     html {
-        font-size: 57%;
+        font-size: 59%;
     }
 }
 @media (min-width: 824px) {
