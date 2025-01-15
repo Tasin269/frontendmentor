@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News homepage</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
+    <base href="javascript:void(0)">
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" id="logo" alt="Logo" />
+      <img src="./images/icon-menu.svg" id="menu-btn" alt="navmenu button" />
+      <div id="menu-overlay"></div>
+      <nav>
+        <img src="./images/icon-menu-close.svg" id="menu-btn-close" alt="navmenu close button" />
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>New</a></li>
+          <li><a>Popular</a></li>
+          <li><a>Trending</a></li>
+          <li><a>Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="top-news">
+      <picture>
+        <source
+          media="(min-width: 780px)"
+          srcset="./images/image-web-3-desktop.jpg"
+        />
+        <img src="./images/image-web-3-mobile.jpg" alt="" />
+      </picture>
+      <h1>The Bright Future of Web 3.0?</h1>
+      <p class="description">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+      </p>
+      <a>READ MORE</a>
+    </section>
+    <section class="new-news">
+      <p class="head">New</p>
+      <div class="news-container">
+        <div class="item">
+          <h2><a>Hydrogen VS Electric Cars</a></h2>
+          <p class="description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr>
+        <div class="item">
+          <h2><a>The Downsides of Al Artistry</a></h2>
+          <p class="description">
+            What are the possible adverse effects of on-demand Al image
+            generation?
+          </p>
+        </div>
+        <hr>
+        <div class="item">
+          <h2><a>Is VC Funding Drying Up?</a></h2>
+          <p class="description">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+    </section>
+    <article class="articles">
+      <div class="item">
+        <img src="./images/image-retro-pcs.jpg" alt="" />
+        <div class="info">
+          <p class="no">01</p>
+          <h3><a>Reviving Retro PCs</a></h3>
+          <p class="description">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/image-top-laptops.jpg" alt="" />
+        <div class="info">
+          <p class="no">02</p>
+          <h3><a>Top 10 Laptops of 2022</a></h3>
+          <p class="description">Our best picks for various needs and budgets</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/image-gaming-growth.jpg" alt="" />
+        <div class="info">
+          <p class="no">03</p>
+          <h3><a>The Growth of Gaming</a></h3>
+          <p class="description">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
