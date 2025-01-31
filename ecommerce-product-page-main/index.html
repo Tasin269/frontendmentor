@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce product page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./images/icon-menu.svg" alt="" id="menu-btn" />
+        <img src="./images/logo.svg" alt="" id="logo" />
+      </div>
+      <div>
+        <div class="cart-icon">
+            <img src="./images/icon-cart.svg" alt="" id="cart-btn" />
+            <p>3</p>
+        </div>
+        <img src="./images/image-avatar.png" alt="" id="pfp" />
+      </div>
+      <nav>
+        <img src="./images/icon-close.svg" alt="" id="menu-close-btn">
+        <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="images-slider">
+        <div class="images">
+            <img src="./images/image-product-1.jpg" alt="" />
+            <img src="./images/image-product-2.jpg" alt="" />
+            <img src="./images/image-product-3.jpg" alt="" />
+            <img src="./images/image-product-4.jpg" alt="" />
+        </div>
+        <div class="buttons">
+            <img src="./images/icon-previous.svg" alt="" id="prev-img-btn" />
+            <img src="./images/icon-next.svg" alt="" id="next-img-btn" />
+        </div>
+    </section>
+    <section class="product-info">
+      <h1>SNEAKER COMPANY</h1>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they"ll withstand everything the
+        weather can offer.
+      </p>
+      <div class="price">
+        <p id="discounted-price">$125.00</p>
+        <p id="discount">50%</p>
+        <p id="normal-price">$250.00</p>
+      </div>
+      <div class="counter">
+        <img src="./images/icon-plus.svg" alt="" id="plus-btn">
+        <p id="counter">0</p>
+        <img src="./images/icon-minus.svg" alt="" id="minus-btn">
+      </div>
+      <button type="button">
+        <img src="./images/icon-cart.svg" alt="">
+        <p>Add to cart</p>
+      </button>
+    </section>
+    <section class="cart-info">
+        <p class="title">Cart</p>
+        <hr>
+        <div class="item">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            <p id="name">Fall Limited Edition Sneaker</p>
+            <p id="price-per-item">
+                <span>$125.00 x </span><span id="how-many">3</span> <span id="full-price">$375.00</span>
+            </p>
+            <img src="./images/icon-delete.svg" alt="" id="delete-btn">
+        </div>
+        <button type="button">Checkout</button>
+        <div id="empty">
+            <p>Your cart is empty</p>
+        </div>
+    </section>
+  </body>
+</html>
