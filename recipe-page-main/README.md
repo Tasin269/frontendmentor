@@ -27,8 +27,8 @@ This is a custom solution to the [QR code component challenge on Frontend Mentor
 
 ### Links
 
-- Github URL: [Qr Code Component](https://github.com/Tasin269/frontendmentor/tree/master/recipe-page-main)
-- Live Site URL: [Qr Code Component](https://tasin269.github.io/frontendmentor/recipe-page-main/)
+- Github URL: [Recipe Page](https://github.com/Tasin269/frontendmentor/tree/master/recipe-page-main)
+- Live Site URL: [Recipe Page](https://tasin269.github.io/frontendmentor/recipe-page-main/)
 
 ## My process
 

@@ -1,0 +1,170 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  /* Colors */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  /* Typography */
+  --font-family: "Inter", "Sans-Serif";
+  --font-size-xl: 2.1rem;
+  --font-size-lg: 1.5rem;
+  --font-size-md: 0.9rem;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+}
+
+/* css resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, img {
+  display: block;
+}
+
+/* Content styling */
+body {
+  background-color: var(--grey-900);
+  font-size: var(--font-size-md);
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+main {
+  background-color: var(--grey-800);
+  width: min(500px, 90%);
+  border-radius: 12px;
+  padding: 1.8em 1em;
+  z-index: 1;
+  margin-block: 1em;
+}
+
+.profile {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+.profile div {
+  border: 10px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#151515)) padding-box, -webkit-gradient(linear, left top, left bottom, from(var(--deg)), color-stop(0%, transparent), color-stop(0%, #11998e), color-stop(60%, #38ef7d), color-stop(0%, transparent)) border-box;
+  background: -o-linear-gradient(#151515, #151515) padding-box, -o-linear-gradient(var(--deg), transparent 0% 26%, #11998e 0% 40%, #38ef7d 60% 75%, transparent 0% 100%) border-box;
+  background: linear-gradient(#151515, #151515) padding-box, linear-gradient(var(--deg), transparent 0% 26%, #11998e 0% 40%, #38ef7d 60% 75%, transparent 0% 100%) border-box;
+  border-radius: 50%;
+  -webkit-animation: spinner 500ms infinite linear;
+  animation: spinner 500ms infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.profile img {
+  width: 90px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.profile #name {
+  color: var(--white);
+  margin-block: 0.8em 0.2em;
+  font-size: var(--font-size-xl);
+}
+.profile #location {
+  color: var(--green);
+  font-weight: var(--font-weight-700);
+}
+.profile #short-desc {
+  margin-block: 1.8em 1.4em;
+  color: var(--white);
+  opacity: 0.7;
+  font-weight: var(--font-weight-500);
+}
+
+ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  justify-items: center;
+}
+ul li {
+  width: 90%;
+}
+ul li a {
+  text-align: center;
+  padding-block: 1.5em;
+  border-radius: 7px;
+  background-color: var(--grey-700);
+  color: var(--white);
+  font-weight: var(--font-weight-700);
+  -webkit-tap-highlight-color: transparent;
+}
+ul li a:hover, ul li a:focus {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.modal img {
+  width: 270px;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+}
+
+/* anination */
+@property --deg {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@-webkit-keyframes spinner {
+  0% {
+    --deg: 0deg;
+  }
+  100% {
+    --deg: 180deg;
+  }
+}
+@keyframes spinner {
+  0% {
+    --deg: 0deg;
+  }
+  100% {
+    --deg: 180deg;
+  }
+}
