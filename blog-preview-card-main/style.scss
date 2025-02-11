@@ -1,0 +1,272 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  
+  /* typography */
+  --font-family: "Figtree", "Sans-Sarif";
+  --font-size-xl: 2.5em;
+  --font-size-lg: 1.5em;
+  --font-size-md: 1em;
+  --font-size-sm: 0.8em;
+  --font-weight-500: 500;
+  --font-weight-800: 800;
+}
+
+/* css resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+img,
+input {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* content styling */
+body {
+  background: -webkit-gradient(linear,
+    left top, left bottom,
+    from(var(--gradient-color-first)),
+    to(var(--gradient-color-second)));
+  background: -o-linear-gradient(top,
+    var(--gradient-color-first),
+    var(--gradient-color-second));
+  background: linear-gradient(to bottom,
+    var(--gradient-color-first),
+    var(--gradient-color-second));
+  background-size: 300%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: var(--font-weight-500);
+}
+main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.card-container {
+  width: min(350px, 85%);
+  margin-block: 2em;
+  margin-inline: auto;
+  border-radius: 17px;
+  position: relative;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.card {
+  border-radius: inherit;
+  background: var(--card-bg-color);
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 10px 10px 0 0 #000;
+          box-shadow: 10px 10px 0 0 #000;
+  
+  .image-holder {
+    text-align: center;
+    border-radius: inherit;
+    
+    img {
+      border-radius: inherit;
+      -webkit-margin-after: 2px;
+              margin-block-end: 2px;
+    }
+  }
+  .category {
+    -webkit-margin-before: 0.8em;
+            margin-block-start: 0.8em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-inline: 1em;
+    height: 1.8em;
+    border-radius: 6px;
+    background: var(--category-bg-color);
+    color: var(--category-text-color);
+    font-weight: var(--font-weight-800);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  h1 {
+    -webkit-margin-before: 0.4em;
+            margin-block-start: 0.4em;
+    
+    a {
+      color: #000;
+      -webkit-tap-highlight-color: transparent;
+    }
+    a:hover, a:focus {
+      color: var(--link-hover-color);
+    }
+  }
+  .description {
+    opacity: 0.6;
+    margin-block: 0.2em 1em;
+    
+    a {
+      font-weight: var(--font-weight-800);
+      color: #000;
+    }
+  }
+  .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: var(--font-weight-800);
+    font-size: var(--font-size-lg);
+    
+    img {
+      width: 60px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      -webkit-margin-start: 0.4em;
+              margin-inline-start: 0.4em;
+    }
+    a {
+      color: #000;
+      -webkit-tap-highlight-color: transparent;
+    }
+    a:hover, a:focus {
+      color: var(--link-hover-color);
+    }
+  }
+}
+#card1 {
+  /* card 1 variable */
+  --card-bg-color: #D1E3F7;
+  --category-bg-color: #231C3D;
+  --category-text-color: #fff;
+  --link-hover-color: #551A8B;
+}
+#card2 {
+  /* card 2 variable */
+  --card-bg-color: #fff;
+  --category-bg-color: hsl(47, 88%, 63%);
+  --category-text-color: #000;
+  --link-hover-color: hsl(47, 88%, 63%);
+  
+  /* card 2 styles */
+  position: absolute;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+button {
+  /* button variables */
+  --button-color-one: #413f5e;
+  --button-color-two: hsl(36.2,88%,63%);
+  
+  /* button styles */
+  background-color: var(--button-color-one);
+  font-weight: var(--font-weight-800);
+  margin-inline: auto;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  color: #fff;
+  border: solid 5px #000;
+  border-radius: 9px;
+  padding-block: 0.5em;
+  width: 190px;
+  font-size: var(--font-size-lg);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+/* animation */
+@property --gradient-color-first {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #231C3D;
+}
+@property --gradient-color-second {
+  syntax: "<color>";
+  initial-value: #EFB1BE;
+  inherits: false;
+}
+@-webkit-keyframes firstCardBgAnim {
+  0% {
+    --gradient-color-first: #231C3D;
+    --gradient-color-second: #EFB1BE;
+  }
+  100% {
+    --gradient-color-first: hsl(47, 88%, 63%);
+    --gradient-color-second: hsl(47, 88%, 63%);
+  }
+}
+@keyframes firstCardBgAnim {
+  0% {
+    --gradient-color-first: #231C3D;
+    --gradient-color-second: #EFB1BE;
+  }
+  100% {
+    --gradient-color-first: hsl(47, 88%, 63%);
+    --gradient-color-second: hsl(47, 88%, 63%);
+  }
+}
+@-webkit-keyframes secondCardBgAnim {
+  0% {
+    --gradient-color-first: hsl(47, 88%, 63%);
+    --gradient-color-second: hsl(47, 88%, 63%);
+  }
+  100% {
+    --gradient-color-first: #231C3D;
+    --gradient-color-second: #EFB1BE;
+  }
+}
+@keyframes secondCardBgAnim {
+  0% {
+    --gradient-color-first: hsl(47, 88%, 63%);
+    --gradient-color-second: hsl(47, 88%, 63%);
+  }
+  100% {
+    --gradient-color-first: #231C3D;
+    --gradient-color-second: #EFB1BE;
+  }
+}
