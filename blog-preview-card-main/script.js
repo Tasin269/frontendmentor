@@ -10,6 +10,7 @@ document.addEventListener( "DOMContentLoaded", () => {
    const option_one = {height: 100}
    Object.assign(option_one, options)
    let dot_one = new Dotdotdot( wrapper[0], option_one );
+   dot_one.API.truncate()
    dot_one.API.watch()
    
    const option_two = {height: 120}
@@ -18,6 +19,7 @@ document.addEventListener( "DOMContentLoaded", () => {
     option_two.height = 160
   }
    let dot_two = new Dotdotdot( wrapper[1], option_two );
+   dot_two.API.truncate()
    dot_two.API.watch()
 });
 
