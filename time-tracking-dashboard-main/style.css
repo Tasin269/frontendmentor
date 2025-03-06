@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: #fff;
+}
+
+.main {
+  min-height: 100vh;
+  display: grid;
+  row-gap: 20px;
+  margin: 30px auto;
+  width: 83%;
+  align-content: center;
+}
+
+.card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 12px;
+}
+
+#card1 .profile {
+  background-color: hsl(246, 80%, 60%);
+  padding: 30px;
+  display: flex;
+  border-radius: 12px;
+}
+#card1 .profile img {
+  height: 75px;
+  border: solid 3px #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#card1 .profile .profile-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+#card1 .profile .profile-info-text p:nth-child(1) {
+  font-size: 1.6rem;
+  color: hsl(236, 100%, 87%);
+}
+#card1 .profile .profile-info-text p:nth-child(2) {
+  margin-top: 9px;
+  font-size: 3.6rem;
+}
+#card1 .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2.1rem;
+  padding: 19px 0;
+  color: hsl(235, 45%, 61%);
+}
+#card1 .button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+}
+#card1 .button:hover {
+  color: #fff;
+}
+#card1 .selected {
+  color: #fff;
+}
+
+.card:not(:nth-child(1)) {
+  padding: 15px 25px 23px;
+  position: relative;
+  margin-top: 50px;
+}
+.card:not(:nth-child(1)) .logo {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("./images/icon-work.svg") hsl(15, 100%, 70%) no-repeat 90% 37%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  z-index: -1;
+}
+.card:not(:nth-child(1)) div:nth-child(2) {
+  margin-top: 17px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card:not(:nth-child(1)) div:nth-child(2) img:hover {
+  filter: brightness(1000%);
+}
+.card:not(:nth-child(1)) div:nth-child(3) {
+  margin-top: 23px;
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card:not(:nth-child(1)) div:nth-child(3) .ctime, .card:not(:nth-child(1)) div:nth-child(3) .ltime {
+  transition: opacity 0.2s, transform 0.1s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.card:not(:nth-child(1)) div:nth-child(3) .ltime {
+  font-size: 1.6rem;
+  color: hsl(236, 100%, 87%);
+  opacity: 0.8;
+}
+.card:not(:nth-child(1)) div:nth-child(3) .ctime.change, .card:not(:nth-child(1)) div:nth-child(3) .ltime.change {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+#card3 .logo {
+  background: url("./images/icon-play.svg") hsl(195, 74%, 62%) no-repeat 90% 37%;
+}
+
+#card4 .logo {
+  background: url("./images/icon-study.svg") hsl(348, 100%, 68%) no-repeat 90% 37%;
+}
+
+#card5 .logo {
+  background: url("./images/icon-exercise.svg") hsl(145, 58%, 55%) no-repeat 90% 37%;
+}
+
+#card6 .logo {
+  background: url("./images/icon-social.svg") hsl(264, 64%, 52%) no-repeat 90% 37%;
+}
+
+#card7 .logo {
+  background: url("./images/icon-self-care.svg") hsl(43, 84%, 65%) no-repeat 90% 37%;
+}
+
+@media (min-width: 319px) and (max-width: 359px) {
+  :root {
+    font-size: 51%;
+  }
+}
+@media (min-width: 868px) {
+  :root {
+    font-size: 70%;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  #card1 {
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+  }
+  #card1 .profile img {
+    height: 90px;
+    margin-top: 30px;
+  }
+  #card1 .profile {
+    display: block;
+  }
+  #card1 .profile .profile-info-text {
+    margin: 50px 0 0 8px;
+  }
+  #card1 .buttons {
+    padding: 0;
+  }
+}
+@media (min-width: 1320px) {
+  :root {
+    font-size: 85%;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 30px;
+  }
+  #card1 {
+    grid-template-rows: 3fr 1.5fr;
+  }
+  #card1 .profile .profile-info-text p:nth-child(2) span {
+    display: block;
+  }
+  #card1 .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 35px;
+  }
+  .card:not(:nth-child(1)) div:nth-child(2) {
+    margin-top: 20px;
+  }
+  .card:not(:nth-child(1)) div:nth-child(3) {
+    margin-top: 40px;
+    display: block;
+  }
+  .card:not(:nth-child(1)) div:nth-child(3) .ltime {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Newsletter signup page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="main">
+    <picture id="prod-img">
+      <source media="(min-width: 1030px)" srcset="./assets/images/illustration-sign-up-desktop.svg"/>
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+    </picture>
+    <form id="form">
+      <p id="header">STAY UPDATED</p>
+      <p id="secondHeader">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="" />
+          <p>Product discovery and building what matters</p>
+        </li>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="" />
+          <p>Measuring to ensure updates are a success</p>
+        </li>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="" />
+          <p>And much more!</p>
+        </li>
+      </ul>
+      <label for="email">
+        Email address
+        <p id="error_msg">Valid email required</p>
+      </label>
+      <input id="email" name="email" type="text" placeholder="email@company.com" autocomplete>
+      <button type="submit">Subscribe to monthly newsletter</button>
+    </form>
+  </div>
+</body>
+</html>

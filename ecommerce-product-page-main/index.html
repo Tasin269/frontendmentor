@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  
+  <!--   header   -->
+  <header>
+    <div id="black-overlay"></div>
+    <div id="mobile-nav">
+      <img id="menu-close-btn" src="./images/icon-close.svg" alt="Menu close button" />
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+    <img id="menu-btn" src="./images/icon-menu.svg" alt="Menu button" />
+    <img src="./images/logo.svg" alt="Sneaker Logo">
+    <ul id="desktop-nav">
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <div id="cart-btn-container">
+      <div id="empty-cart-btn">
+        <img src="./images/icon-cart.svg" alt="Cart button" />
+      </div>
+      <div id="filled-cart-btn">
+        <img src="./images/icon-cart-black.svg" alt="Cart button" />
+        <p id="cart-number">0</p>
+      </div>
+    </div>
+    <img src="./images/image-avatar.png" alt="Profile avater" />
+  </header>
+  <main>
+    
+    <!--     hero section      -->
+    <section id="hero-section">
+      <div id="layer-1">
+        <div id="block-overlay"></div>
+        <div id="layer-2">
+          <img src="./images/image-product-1.jpg" alt="">
+          <img src="./images/image-product-2.jpg" alt="">
+          <img src="./images/image-product-3.jpg" alt="">
+          <img src="./images/image-product-4.jpg" alt="">
+        </div>
+        <div class="nav-btns">
+          <div id="previous-btn">
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+          </div>
+          <div id="next-btn">
+            <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="image-slider">
+        <div class="active">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    
+    <!-- product info section -->
+    <section id="product-info-section">
+      <p class="company-name">Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="price">
+        <div>
+          <h2>$125.00</h2>
+          <p>50%</p>
+        </div>
+        <p>$250.00</p>
+      </div>
+      <div class="items-counter">
+        <img id="minus-btn" src="./images/icon-minus.svg" alt="Decrease Quantity button" />
+        <p id="show-counter">0</p>
+        <img id="plus-btn" src="./images/icon-plus.svg" alt="Increase Quantity button" />
+      </div>
+      <button id="add-to-cart-btn" type="button">
+        <img src="./images/icon-cart-black.svg" alt="" />
+        <p>Add to cart</p>
+      </button>
+    </section>
+  </main>
+  <div id="cart-container">
+    <p>Cart</p>
+    <hr />
+    <div id="filled">
+      <p id="empty-msg">Your cart is empty</p>
+      <div class="item">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+        <div>
+          <p class="name">Fall Limited Edition Sneakers</p>
+          <p>$125.00 x
+          <span id="count"> 3 </span>
+          <span id="total-price">$375.00</span></p>
+        </div>
+        <img id="delete-btn" src="./images/icon-delete.svg" alt="Delete item button" />
+      </div>
+      <button type="button">Checkout</button>
+    </div>
+  </div>
+</body>
+</html>
